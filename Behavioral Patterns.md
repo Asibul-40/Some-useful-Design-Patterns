@@ -6,5 +6,5 @@ Behavioral design patterns are concerned with algorithms and the assignments of 
 - Strategy pattern
 
 ## Observer Pattern
-g
+
 
