@@ -22,4 +22,17 @@ But what is the gurantee that our client will not ask another new type of house 
 
 ![Untitled Diagram (30)](https://github.com/Asibul-40/Some-useful-Design-Patterns/assets/77221075/df7cb762-636a-4801-8b8d-d9533396c60a)
 
+In the following figure: <br/>
+- **Builder:** The builder interface defines the common steps to build any object, which always remains same for any type of builder for any product.
+- **Engineer (Director):** The director class instructs the builder to build any specific type oof object based on the *Client's* requirements.
+- **WooenHouseBuilder/LuxuryHouseBuilder (Concrete Builder):** These different types of builder classes provide different instructions to build the required product.
+- **WoodenHouse/LuxuryHouse (Product):** These classes are the resulting objects which we instruct our builder through the director class.
+- **Client:** The client object only interacts with the director class to get their desired objects. According to the requirements, the *Director* class communicate with the *Builder* class through an object of that specific *productBuilder* class.
+
+
+## Usecase of Builder pattern:
+- When our designing requirements varies a lot according to our client's need, we can create object by following this strategy instead of definig new constructors for every new requirement.
+- We can use this pattern whenever we need to build different objects with some predefined attributes and also with some additional new properties.
+- If we want to construct any object by following some sequential steps, then this pattern is definitely useful.
+
 
