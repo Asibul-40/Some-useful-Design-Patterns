@@ -26,10 +26,10 @@ Consider the following example:
 
 ![Untitled Diagram (32)](https://github.com/Asibul-40/Some-useful-Design-Patterns/assets/77221075/9dc0ec93-610a-4737-a877-dbe682017d48)
 
-Let's say, we have a computer and we want to do some tasks using this computer. For this, we need to start our computer from its power-off state. So we are only concerned about opening our computer by tapping the *power button*. We don't know how our computer will start to operate with its internal components, like: *processor*, *ram*, *operating system* etc. 
+Let's say, we have a computer and we want to do some tasks using this computer. For this, we need to start our computer from its *shut-down* state. Suppose, we are only concerned about starting our computer by tapping the *power button*. We don't know how our computer will start to operate with its internal components, like: *processor*, *ram*, *operating system* etc. 
 - **CPU, Memory, OS (Complex subsytem):** The internal functional modules of a computer. To start a computer, these modules are needed to be setup their functionality fro the *executable* state. Hence, these complex functionalities are always hidden from a normal user.
 - **FacadeComputer:** The simplified interface to operate a computer properly without having the knowledge of *how computer is performing its functional tasks*.
-- **User:** The users interacts with the *FacadeComputer* interface to get the services.
+- **User:** Users interacts with the *FacadeComputer* interface to get the services.
 
 ## Usecases of Facade Pattern
 - We should use this pattern when there needs a common middleware to communicate with some internal complex architectures.
