@@ -31,7 +31,7 @@ In the following figure: <br/>
 
 
 ## Usecase of Builder pattern:
-- When our designing requirements varies a lot according to our client's need, we can create object by following this strategy instead of definig new constructors for every new requirement.
+- When our designing requirements varies a lot according to our client's need, we can create object by following this strategy instead of defining new constructors for every new requirement.
 - We can use this pattern whenever we need to build different objects with some predefined attributes and also with some additional new properties.
 - If we want to construct any object by following some sequential steps, then this pattern is definitely useful.
 
