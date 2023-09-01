@@ -23,7 +23,7 @@ But what is the gurantee that our client will not ask another new type of house 
 ![Untitled Diagram (30)](https://github.com/Asibul-40/Some-useful-Design-Patterns/assets/77221075/df7cb762-636a-4801-8b8d-d9533396c60a)
 
 In the following figure: <br/>
-- **Builder:** The builder interface defines the common steps to build any object, which always remains same for any specific product based builder.
+- **HouseBuilder:** The builder interface defines the common steps to build any object, which always remains same for any specific product based builder.
 - **Engineer (Director):** The director class instructs the builder to build any specific type oof object based on the *Client's* requirements.
 - **WooenHouseBuilder/LuxuryHouseBuilder (Concrete Builder):** These different types of builder classes provide different instructions to build the required product.
 - **WoodenHouse/LuxuryHouse (Product):** These classes are the resulting objects which we instruct our builder through the director class.
