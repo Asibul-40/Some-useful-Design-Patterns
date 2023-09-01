@@ -8,7 +8,7 @@ Behavioral design patterns are concerned with algorithms and the assignments of 
 ## Observer Pattern
 - Follows one-to-many relationships pattern between objects and all the dependent objects are notified whenever the state of the *Observable(Subject)* object changes.
 - Objects interacts with each other by following the broadcast-type communication.
-- This pattern ensures *loosely coupling* between the concrete subject and the observers. As the concrete subject only know one thing: any observer need to implement a certain interface to become the subject's observer.
+- This pattern ensures *loosely coupling* between the concrete subject and the observers. As the concrete subject only know one thing & that is: a observer need to implement a certain interface to become the *subject's* observer.
 - We can add or remove any observer at runtime.
 
 This is the overall architecture of the observer pattern:
@@ -32,6 +32,6 @@ We can solve such type of situation by using the observer pattern.
 - **GameAuthority:** Whenever the state of the *gameUpdateNews* changes, the gaming authority notifies all the game users.
 - **GameObservers:** The required concrete methods (**update()** ) are defined to spread the news to all gamers. And all the gamer class needs to implement those methods to get that updated news.
 
-## Usercase of the Observer pattern:
+## Usecase of the Observer pattern:
 - When the change of one object may requires to change the multiple object's state dynamically, we can use the observer pattern to notify all those at once.
 - To maintain the one-to-many relationship dependency, we should use observer pattern.
